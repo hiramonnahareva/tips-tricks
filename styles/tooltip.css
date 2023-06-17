@@ -1,0 +1,241 @@
+/* -------- tooltip ---------- */
+
+body {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+abbr {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    margin: 0 20px;
+    color: rgb(39, 9, 172);
+}
+/* ----------- tooltip css ----------- */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip::before,
+.tooltip::after {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-in-out;
+}
+.tooltip:hover::before,
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip::before {
+    content: attr(data-tooltip);
+    z-index: 2;
+    width: 210px;
+    color: #fff;
+    background: rgba(87, 53, 237);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.tooltip::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+/* ----------- tooltip top ----------- */
+
+.tooltip--top::before,
+.tooltip--top::after {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+}
+
+.tooltip--top::after {
+    margin-bottom: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid rgba(87, 53, 237);
+}
+
+/* ----------- tooltip bottom ----------- */
+.tooltip--bottom::before,
+.tooltip--bottom::after {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+}
+
+.tooltip--bottom::after {
+    margin-top: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid rgba(87, 53, 237);
+}
+
+/* ----------- tooltip left ----------- */
+
+.tooltip--left::before,
+.tooltip--left::after {
+    top: 50%;
+    right: 100%;
+    transform: translate(0, -50%);
+    margin-right: 15px;
+}
+
+.tooltip--left::after {
+    margin-right: 8px;
+    border-top: 5px solid transparent;
+    border-left: 7px solid rgba(87, 53, 237);
+    border-bottom: 5px solid transparent;
+}
+
+/* ----------- tooltip right ----------- */
+
+.tooltip--right::before,
+.tooltip--right::after {
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    margin-left: 15px;
+}
+
+.tooltip--right::after {
+    margin-left: 8px;
+    border-top: 5px solid transparent;
+    border-right: 7px solid rgba(87, 53, 237);
+    border-bottom: 5px solid transparent;
+}
+
+
+
+/* button */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background:#fff;
+}
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "BUTTON";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+/*  */
+
+
+button{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(207, 207, 207);
+  }
+  
+  button:hover{
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 8px #f9f8fc;
+    } 
+  
+   #foot{
+    position: relative;
+    /* top: 15px; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    /* padding: 15px; */
+    border-radius: 15px;
+    box-shadow: 0 0 8px #d9d4e7;
+    width: 200px;
+    height: 65px;
+    background-color: #d9d4e7;
+    animation-duration: 5s;
+  }
+  
+  .button-os{
+     position: absolute;
+      width: 200px;
+      height: 65px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #f9f8fc;
+      border: 2.5px solid #0e172c;
+      transition: background-color 2.2s;
+      transition-duration: 3s;
+      transition: 1.5s;
+    }
+    
+    .button-os:hover{
+      position: absolute;
+      top: 30px;
+      background-color: #fec7d7;
+    }
+    
+    .button-os a{
+      font-size: 20px;
+      display: block;
+      text-decoration: none;
+      color:#0e172c;
+      transition: 1.5s;
+    }
+    
+    .button-os a:hover{
+      letter-spacing: 5px;
+    }

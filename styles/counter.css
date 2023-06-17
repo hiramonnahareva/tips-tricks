@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+}
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B0520;
+  color: #dcdcdc;
+}
+.counter_conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  margin-top: 1rem;
+}
+span {
+  font-size: 3rem;
+  background-color: #dcdcdc;
+  padding: 2px 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 4px;
+  color: #0B0520;
+}
+button {
+  font-size: 3rem;
+  color: #dcdcdc;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+
