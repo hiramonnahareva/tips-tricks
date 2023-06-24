@@ -2,8 +2,6 @@
 
 This tutorial will guide you through creating an animated button hover effect using HTML, CSS, and JavaScript.
 
-![Final Result](images/final_result.gif)
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
