@@ -44,6 +44,8 @@ Follow these steps to implement the animated button hover effect:
 
 Feel free to experiment with different CSS properties and animations to create unique button effects.
 
+![Button Hover Effect](images/button_hover_effect.gif)
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, improvements, or bug fixes, please follow these steps:
