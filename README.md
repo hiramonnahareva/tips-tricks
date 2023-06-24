@@ -10,7 +10,6 @@ This tutorial will guide you through creating an animated button hover effect us
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
