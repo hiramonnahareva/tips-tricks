@@ -14,7 +14,7 @@ nav ul {
 }
 
 nav ul li {
-    --c: rgb(173, 7, 7);
+    --c: rgb(54, 7, 173);
     color: var(--c);
     font-size: 16px;
     border: 0.3em solid var(--c);

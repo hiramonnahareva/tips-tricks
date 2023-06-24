@@ -1,18 +1,33 @@
 /* -------- tooltip ---------- */
 
-body {
-    margin: 60px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../360_F_601453145_8Ro2cdOnun1Cmlt963m7tbHrJoLnutDG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  margin: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 0 580px;
+    background: #0000009a;
 }
 abbr {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     padding-bottom: 2px;
     margin: 0 20px;
-    color: rgb(39, 9, 172);
+    color: rgba(255, 255, 255, 0.835);
 }
 /* ----------- tooltip css ----------- */
 .tooltip {
@@ -37,7 +52,13 @@ abbr {
     z-index: 2;
     width: 210px;
     color: #fff;
-    background: rgba(87, 53, 237);
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.803);
+
     border-radius: 5px;
     padding: 20px;
 }
@@ -62,7 +83,7 @@ abbr {
     margin-bottom: 8px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 7px solid rgba(87, 53, 237);
+    border-top: 7px solid rgba(255, 255, 255, 0.835);
 }
 
 /* ----------- tooltip bottom ----------- */
@@ -78,7 +99,7 @@ abbr {
     margin-top: 8px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 7px solid rgba(87, 53, 237);
+    border-bottom: 7px solid rgba(255, 255, 255, 0.835);
 }
 
 /* ----------- tooltip left ----------- */
@@ -94,7 +115,7 @@ abbr {
 .tooltip--left::after {
     margin-right: 8px;
     border-top: 5px solid transparent;
-    border-left: 7px solid rgba(87, 53, 237);
+    border-left: 7px solid rgba(255, 255, 255, 0.835);
     border-bottom: 5px solid transparent;
 }
 
@@ -111,7 +132,7 @@ abbr {
 .tooltip--right::after {
     margin-left: 8px;
     border-top: 5px solid transparent;
-    border-right: 7px solid rgba(87, 53, 237);
+    border-right: 7px solid rgba(255, 255, 255, 0.835);
     border-bottom: 5px solid transparent;
 }
 
@@ -119,16 +140,7 @@ abbr {
 
 /* button */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background:#fff;
-}
+
 span{
   position: relative;
   display: inline-flex;
@@ -171,6 +183,8 @@ span a:after{
 span a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
 }
+
+
 
 
 /*  */

@@ -5,6 +5,7 @@
   margin: 0px;
   font-family: inherit;
 }
+
 html,
 body {
   height: 100vh;
@@ -17,9 +18,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0B0520;
+  background-image: url('../bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #dcdcdc;
+  height: 100%;
 }
+
+.wrapper {
+  background-color: #0c0329bd;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(41, 15, 94, 0.3);
+  width: 99vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  z-index: 111;
+}
+
 .counter_conatiner {
   display: flex;
   align-items: center;
@@ -27,6 +49,7 @@ body {
   padding: 6px;
   margin-top: 1rem;
 }
+
 span {
   font-size: 3rem;
   background-color: #dcdcdc;
@@ -35,12 +58,14 @@ span {
   margin-right: 16px;
   border-radius: 4px;
   color: #0B0520;
+  z-index: 111;
 }
+
 button {
   font-size: 3rem;
   color: #dcdcdc;
   cursor: pointer;
   background-color: transparent;
   border: 0px;
+  z-index: 111;
 }
-
