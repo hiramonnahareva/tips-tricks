@@ -7,14 +7,13 @@ This tutorial will guide you through creating an animated button hover effect us
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributing](#contributing) 
 
 ## Introduction
 
 In this tutorial, we will learn how to create a button with a captivating hover effect using CSS animations. The button will transition smoothly, providing an engaging user experience. By following these steps, you will be able to apply this effect to your own buttons and enhance the interactivity of your web projects.
 
 ## Prerequisites
-
 
 Before you begin, ensure you have the following:
 
